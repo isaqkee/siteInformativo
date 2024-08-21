@@ -14,6 +14,10 @@
 	src: url(fonts/Montserrat-Regular.ttf);
 }
 
+h1{
+    font-family: 'Montserrat-ExtraBold';
+}
+
 .header{
     display: flex;
     /* justify-content: space-around; */
@@ -70,7 +74,40 @@
     font-size: 25px;
 }
 
-.apre img{
+
+.apre {
+    position: relative;
     width: 100%;
-    height: 740px;
+    height: 650px;
+    background-image: url(img/site.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.foreground-image {
+    position: absolute;
+    top: 130px;
+    left: 250px;
+    width: 450px;
+    height: 450px;
+    z-index: 2;
+   
+}
+
+.texto{
+    position: absolute;
+    top: 130px;
+    left: 1000px;
+    width: 450px;
+    height: 450px;
+    z-index: 3;
+} 
