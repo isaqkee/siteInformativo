@@ -139,13 +139,3 @@ h1{
     cursor: pointer;
 }
 
-.botoes{
-    border: none; /* Remove a borda padrão */
-    cursor: pointer; /* Muda o cursor para indicar que é clicável */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave para transformação e sombra */
-}
-
-.botoes:hover{
-    transform: translateY(-5px); /* Move o botão 5px para cima */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra para o efeito de elevação */
-}
