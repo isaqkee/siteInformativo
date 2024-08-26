@@ -256,3 +256,24 @@ i{
     width: 90px;
 }
 
+.contatin{
+    background: url(img/bground.png) no-repeat center center / cover;
+    height: 1000px;
+    margin-left: 15px;
+    
+    
+}
+
+#single-line-textarea {
+    resize: none; /* Impede o redimensionamento */
+    overflow: hidden; /* Remove as barras de rolagem */
+    width: 300px; /* Defina a largura desejada */
+    height: 30px; /* Defina a altura para uma linha */
+    line-height: 30px; /* Alinha o texto verticalmente */
+    white-space: nowrap; /* Impede quebra de linha */
+    border: 1px solid #ccc; /* Adiciona uma borda */
+    padding: 5px; /* Ajusta o espaçamento interno */
+    font-size: 16px; /* Ajuste o tamanho da fonte */
+  }
+  
+  
