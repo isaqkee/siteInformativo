@@ -18,6 +18,10 @@ html{
 	src: url(fonts/Montserrat-Regular.ttf);
 }
 
+input, label{
+    font-family: 'Montserrat-Regular';
+}
+
 h1{
     font-family: 'Montserrat-ExtraBold';
 }
@@ -259,21 +263,46 @@ i{
 .contatin{
     background: url(img/bground.png) no-repeat center center / cover;
     height: 1000px;
-    margin-left: 15px;
-    
-    
+    margin-left: 15px;  
 }
 
-#single-line-textarea {
-    resize: none; /* Impede o redimensionamento */
-    overflow: hidden; /* Remove as barras de rolagem */
-    width: 300px; /* Defina a largura desejada */
-    height: 30px; /* Defina a altura para uma linha */
-    line-height: 30px; /* Alinha o texto verticalmente */
-    white-space: nowrap; /* Impede quebra de linha */
-    border: 1px solid #ccc; /* Adiciona uma borda */
-    padding: 5px; /* Ajusta o espaçamento interno */
-    font-size: 16px; /* Ajuste o tamanho da fonte */
-  }
-  
-  
+form{
+    width: 100%;
+    max-width: 350px;
+    padding: 2%;
+}
+
+.single-input{
+    position: relative;
+    margin: 30px 0;
+}
+.single-input label{
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    color: rgb(150,150,150);
+    cursor: text;
+    transition: 0.5s ease-in-out;
+}
+
+.input{
+    width: 100%;
+    padding: 5px;
+    border: 0;
+    border-bottom: 2px solid rgb(200,200,200);
+    outline: 0;
+    font-size: 16px;
+    color: rgb(80,80,80);
+    transition: 0.5s ease-in-out;
+}
+
+.input:focus,
+.input:valid{
+    border-bottom: 2px solid #FFD942;
+}
+.input:focus ~ label,
+.input:valid ~ label{
+    transform: translateY(-24px);
+    font-size: 12px;
+    color: #FFD942;
+}
