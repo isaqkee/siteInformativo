@@ -227,6 +227,7 @@ span{
     display: flex;
     align-items: center;
     gap: 25px;
+    font-family: 'Montserrat-Regular';
 }
 
 .content{
@@ -273,10 +274,12 @@ i{
     align-items: center;
 }
 
+
 form{
     width: 100%;
-    max-width: 350px;
+    max-width: 569.69px;
     padding: 2%;
+    margin-bottom: 20px;
 }
 
 .single-input{
@@ -340,3 +343,40 @@ form{
     font-size: 30px;
     margin-left: 25px;
 }
+
+.contate{
+    font-size: 40px;
+}
+
+form img{
+    width: 450px;
+}
+
+.enviar{
+    display: flex;
+    margin-top: 6px;
+    background-color: #FFD942;
+    border-radius: 30px;
+    height: 37px;
+    padding: 16px;
+    text-align: center;
+    font-size: 19px;
+    margin-left: 153px;
+    align-items: center;
+    width: 150px;
+    align-content: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+    
