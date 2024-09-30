@@ -37,7 +37,9 @@ h4{
 ul li{
     font-family: 'Montserrat-Regular';
 }
-
+form {
+    font-family: 'Montserrat-Regular';
+}
 .header{
     display: flex;
     /* justify-content: space-around; */
@@ -386,7 +388,7 @@ form img{
 }
 
 .rodape {
-	background-color: #000000;
+	background-color: #312F2F;
 	color: #fff;
 	padding: 20px;
 	text-align: center;
