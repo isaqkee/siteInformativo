@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <title>VanRace</title>
     <script src="https://kit.fontawesome.com/0108eb426c.js" crossorigin="anonymous"></script>
+    <!-- Script do Google reCAPTCHA -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body>
@@ -110,20 +112,20 @@
                     <label for="nome">Seu Nome*</label>
                 </div>
                 <div class="single-input">
-                    <input type="text" class="input" id="sobrenome" required>
-                    <label for="sobrenome">Seu E-mail*</label>
+                    <input type="email" class="input" id="email" required>
+                    <label for="email">Seu E-mail*</label>
                 </div>
                 <div class="single-input">
-                    <input type="text" class="input" id="telefone" required>
+                    <input type="tel" class="input" id="telefone" required>
                     <label for="telefone">Seu Telefone*</label>
                 </div>
                 <div class="single-input">
-                    <input type="text" class="input" id="mensagem" required>
+                    <textarea class="input" id="mensagem" required></textarea>
                     <label for="mensagem">Sua Mensagem*</label>
                 </div>
-                <img src="img/captcha.gif" alt="">
+                <!-- Adicionando o reCAPTCHA -->
+                <div class="g-recaptcha" data-sitekey="SEU_SITE_KEY"></div>
                 <button type="button" class="enviar">Enviar</button>
-
             </form>
             <div class="blocoTudo">
                 <h1 class="infoGrande">Info</h1>
@@ -138,15 +140,14 @@
     </section>
 
     <!-- modal -->
-    
-        <div id="modal" class="modal">
-            <div class="modal-content">
-                <i class="fa-solid fa-check-circle"></i>
-                <h2>Mensagem enviada com sucesso!</h2>
-                <button id="close-modal">Fechar</button>
-            </div>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <i class="fa-solid fa-check-circle"></i>
+            <h2>Mensagem enviada com sucesso!</h2>
+            <button id="close-modal">Fechar</button>
         </div>
-    
+    </div>
+
     <footer class="rodape fade-in">
         <div class="textoRodape">
             <p>&copy; 2024 - Todos os direitos reservados</p>

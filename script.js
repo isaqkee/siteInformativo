@@ -35,11 +35,18 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             });
 
+            // Validação do reCAPTCHA
+            const recaptchaResponse = grecaptcha.getResponse();
+            if (!recaptchaResponse) {
+                isValid = false;
+                alert("Por favor, confirme que você não é um robô."); // Alerta para o reCAPTCHA
+            }
+
             if (isValid) {
-                // Exibir o modal se todos os campos estiverem preenchidos
+                // Exibir o modal se todos os campos estiverem preenchidos e o reCAPTCHA validado
                 modal.style.display = "flex";
             } else {
-                alert("Por favor, preencha todos os campos obrigatórios."); // Alerta para campos vazios
+                alert("Por favor, preencha todos os campos obrigatórios.");
             }
         });
     }
