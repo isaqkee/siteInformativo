@@ -11,7 +11,7 @@
 
 <body>
     <!-- header -->
-    <section id="home">
+    <section id="home" class="fade-in">
         <div class="header">
             <img src="img/logo.png" alt="logo">
             <ul class="navbar">
@@ -24,37 +24,32 @@
                 <a href="#contato">Contate-nos</a>
             </div>
             <div class="redes">
-                <a href="https://www.facebook.com/?locale=pt_BR"><i class="fa-brands fa-facebook"
-                        style="color: #FFD43B;"></i></a>
+                <a href="https://www.facebook.com/?locale=pt_BR"><i class="fa-brands fa-facebook" style="color: #FFD43B;"></i></a>
                 <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram" style="color: #FFD43B;"></i></a>
                 <a href="https://x.com/?lang=pt-br"><i class="fa-brands fa-twitter" style="color: #FFD43B;"></i></a>
             </div>
         </div>
     </section>
     <!-- apresentação -->
-    <section id="aplicativo">
+    <section id="aplicativo" class="fade-in">
         <div class="apre"></div>
-        <!-- <img src="img/site.png" alt="Imagem de Fundo" class="background-image"> -->
         <img src="img/celulares.png" alt="Imagem em Primeiro Plano" class="foreground-image">
         <h1 class="texto">Transporte Escolar Seguro, na Palma da Sua Mão!</h1>
         <button class="botoes">
-            <a href="https://www.apple.com/br/app-store/"><img src="img/baixar.png" alt="" class="disponivel"> </a>
+            <a href="https://www.apple.com/br/app-store/"><img src="img/baixar.png" alt="" class="disponivel"></a>
         </button>
         <button class="botoesDois">
             <a href="https://play.google.com/store/apps/details?id=com.google.android.play.games&hl=pt_BR&pli=1"><img
                     src="img/baixar2.png" alt="" class="disponivelDois"></a>
         </button>
-        </div>
     </section>
     <!-- sobre nós -->
-    <div class="section" id="sobre"></div>
-    <div class="sobre">
+    <div class="section" id="sobre" class="fade-in"></div>
+    <div class="sobre fade-in">
         <h1 class="nos">
             SOBRE <span class="amarelo">NÓS:</span>
         </h1>
         <div class="tudin">
-
-
             <h4 class="nosGrandeUm">
                 <p class="um">Somos cinco jovens estudantes do SESI e do SENAI: Letícia, Vitória, Leonardo, Samuel e
                     Isaque. <br> Unimos
@@ -64,14 +59,12 @@
                     <br>para os pais
                     e responsáveis.
                 </p>
-
                 <p class="dois">Com o VanRace, os motoristas podem gerenciar suas rotas e monitorar as crianças
                     <br>de forma prática e
                     eficiente. Para os responsáveis, o aplicativo oferece a tranquilidade de acompanhar <br> em
                     tempo real o
                     trajeto dos seus filhos, garantindo que estejam sempre seguros.
                 </p>
-
                 <p class="tres">Nosso objetivo é usar a tecnologia para transformar a mobilidade escolar, promovendo
                     uma experiência <br>
                     mais conectada e segura para todos os envolvidos. Esse é o nosso compromisso: <br> contribuir
@@ -83,10 +76,9 @@
             </div>
         </div>
     </div>
-    </section>
 
     <!-- Serviços -->
-    <section id="servicos">
+    <section id="servicos" class="fade-in">
         <div class="container">
             <div class="phones">
                 <h1>SERVIÇOS:</h1>
@@ -94,42 +86,23 @@
             </div>
             <div class="services">
                 <ul class="amoo">
-                    <li>
-                        <img src="img/van.png" alt="">
-                        Facilidade nos pagamentos
-                    </li>
-                    <li>
-                        <img src="img/van.png" alt="">
-                        Exibe a localização do veículo em tempo real
-                    </li>
-                    <li>
-                        <img src="img/van.png" alt="">
-                        Estima o tempo previsto para a chegada do transporte
-                    </li>
-                    <li>
-                        <img src="img/van.png" alt="">
-                        Comunicação entre transportador e passageiros por chat e comunicados
-                    </li>
-                    <li>
-                        <img src="img/van.png" alt="">
-                        Atualização de Pagamentos
-                    </li>
+                    <li><img src="img/van.png" alt="">Facilidade nos pagamentos</li>
+                    <li><img src="img/van.png" alt="">Exibe a localização do veículo em tempo real</li>
+                    <li><img src="img/van.png" alt="">Estima o tempo previsto para a chegada do transporte</li>
+                    <li><img src="img/van.png" alt="">Comunicação entre transportador e passageiros por chat e comunicados</li>
+                    <li><img src="img/van.png" alt="">Atualização de Pagamentos</li>
                 </ul>
             </div>
-
         </div>
     </section>
 
     <!-- contato -->
-    <section id="contato">
+    <section id="contato" class="fade-in">
         <div class="contatin">
-
             <form class="formulario">
-
                 <h1 class="contate">
                     CONTATE- <span class="amarelo">NÓS</span>
                 </h1>
-
                 <div class="single-input">
                     <input type="text" class="input" id="nome" required>
                     <label for="nome">Seu Nome*</label>
@@ -139,27 +112,18 @@
                     <label for="sobrenome">Seu E-mail*</label>
                 </div>
                 <div class="single-input">
-                    <input type="text" class="input" id="nome" required>
-                    <label for="nome">Seu Telefone*</label>
+                    <input type="text" class="input" id="telefone" required>
+                    <label for="telefone">Seu Telefone*</label>
                 </div>
                 <div class="single-input">
-                    <input type="text" class="input" id="nome" required>
-                    <label for="nome">Sua Mensagem*</label>
+                    <input type="text" class="input" id="mensagem" required>
+                    <label for="mensagem">Sua Mensagem*</label>
                 </div>
-
                 <img src="img/captcha.gif" alt="">
-
-                <button class="enviar">
-                    Enviar
-                </button>
-
+                <button class="enviar">Enviar</button>
             </form>
-
             <div class="blocoTudo">
-                <h1 class="infoGrande">
-                    Info
-                </h1>
-
+                <h1 class="infoGrande">Info</h1>
                 <h2 class="informacoes">
                     <div><img src="img/local.png" alt="">vanrace@gmail.com</div>
                     <div><img src="img/email.png" alt="">+55 11 99999-9999</div>
@@ -168,14 +132,14 @@
                 </h2>
             </div>
         </div>
-        </div>
     </section>
-    <footer class="rodape">
+    <footer class="rodape fade-in">
         <div class="textoRodape">
-        <p>&copy; 2024 - Todos os direitos reservados</p>
-        <p>Entre em contato pelo e-mail: vanRace@gmail.com</p>
-    </div>
+            <p>&copy; 2024 - Todos os direitos reservados</p>
+            <p>Entre em contato pelo e-mail: vanRace@gmail.com</p>
+        </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
